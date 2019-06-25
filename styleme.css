@@ -3,8 +3,11 @@ body {
     background-color: lightgray;
     background-position: 370px 20px; 
 }
-p{
-    background: #ffffff url("image.png") no-repeat right top;
+/*p{
+    background-color: goldenrod;
+}*/
+p::first-letter {
+    font-size: 25px;
 }
 h1{
     color:midnightblue;
@@ -13,11 +16,12 @@ h3{
     color: midnightblue;
 }
 strong{
-    color:yellow;
+    color:darkgoldenrod;
 }
 /* unvisited link */
 a:link {
     color:darkred;
+    text-decoration: none;
 }
 /* visited link */
 a:visited {
@@ -26,8 +30,12 @@ a:visited {
 /* mouse over link */
 a:hover {
     color:darkviolet;
+    text-decoration: underline;
 }
 /* click on a link */
 a:active {
     color:darkblue;
+}
+dt{
+    color:darkgoldenrod;
 }
