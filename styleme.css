@@ -1,0 +1,33 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: lightgray;
+    background-position: 370px 20px; 
+}
+p{
+    background: #ffffff url("image.png") no-repeat right top;
+}
+h1{
+    color:midnightblue;
+}
+h3{
+    color: midnightblue;
+}
+strong{
+    color:yellow;
+}
+/* unvisited link */
+a:link {
+    color:darkred;
+}
+/* visited link */
+a:visited {
+    color: darkolivegreen;
+}
+/* mouse over link */
+a:hover {
+    color:darkviolet;
+}
+/* click on a link */
+a:active {
+    color:darkblue;
+}
