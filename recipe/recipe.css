@@ -19,10 +19,10 @@ h3{
 }
 ul li{
     list-style-image: url(images/pie_icon.gif);
-    line-height: 20px;
+    line-height: 25px;
 }
 ol li{
-    line-height: 20px;
+    line-height: 25px;
 }
 
 #body p{
