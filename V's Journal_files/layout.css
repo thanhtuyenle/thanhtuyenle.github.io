@@ -4,27 +4,33 @@
     margin: 3px;
 }
 #header{
-    border-color: red;
     text-align: right;
+    background-color: #A8F0F0;
+    border-width: 0px;
 }
 #shortdescription{
-    border-color: orange;
+    border-width: 0px;
+}
+div h2{
+    font-size: 14pt;
 }
 
 #section1, #section2{
-    border-color: blue;
+    border: solid #C2E9E9 4px;
+    border-radius: 15px;
     background-color: #E8FBFB;
     margin-top: 10px;
     padding: 5px;
     overflow: auto;
 }
 #overall{
-    border-color: green;
+    border:solid white 10px;
     background-color: white;
     margin: auto 10%;
 }
 #date1, #date2{
-    border-color: purple;
+    border-width: 0px;
+    border-bottom: dashed blue 2px;
 }
 #footer{
     margin-left: 10%;
@@ -37,4 +43,34 @@
 
 #section1 img, #section2 img{
     float: right;
+}
+
+@media screen and (min-width:600px) {
+    #friends{
+        width: 15%;
+        background-color: #A8F0F0;
+        border-width: 5px;
+        border-radius: 15px;
+        float: left;
+    }
+    #friends li{
+        margin-left: 10px;
+    }
+    #section2 {
+        margin-left: 16.5%;
+    }
+}
+@media screen and (max-width:599px) {
+    #friends{
+        background-color: #A8F0F0;
+        border-width: 5px;
+        border-radius: 15px;
+    }
+    #friends li{
+        border: solid #E8FBFB 2px;
+        display: inline;
+    }
+    #section1, #section2{
+        margin-left: 0;
+    }
 }
