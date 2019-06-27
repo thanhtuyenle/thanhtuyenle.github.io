@@ -1,0 +1,40 @@
+.border {
+    border-style: solid;
+    border-width: 5px;
+    margin: 3px;
+}
+#header{
+    border-color: red;
+    text-align: right;
+}
+#shortdescription{
+    border-color: orange;
+}
+
+#section1, #section2{
+    border-color: blue;
+    background-color: #E8FBFB;
+    margin-top: 10px;
+    padding: 5px;
+    overflow: auto;
+}
+#overall{
+    border-color: green;
+    background-color: white;
+    margin: auto 10%;
+}
+#date1, #date2{
+    border-color: purple;
+}
+#footer{
+    margin-left: 10%;
+}
+#bg{
+    background: url("http://mumstudents.org/cs472/2019-07-RS/Labs/2/background.gif");
+    border: none;
+    align-content: center;
+}
+
+#section1 img, #section2 img{
+    float: right;
+}
