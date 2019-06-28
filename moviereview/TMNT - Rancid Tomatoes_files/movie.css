@@ -101,6 +101,7 @@ dl .info{
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     padding-bottom: 5px;
+    clear:both;
 }
 #checklinks{
     float: right;
