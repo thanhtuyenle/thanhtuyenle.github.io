@@ -91,6 +91,7 @@ dl dt{
 dl .info{
     margin-bottom: 10pt;
     margin-left: 10pt;
+    margin-right: 5pt;
 }
 .info ul{
     list-style-type: none;
