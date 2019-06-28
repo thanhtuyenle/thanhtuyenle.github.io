@@ -56,7 +56,6 @@ h1{
     font-weight: bold;    
 }
 #reviews {
-    column-width: 47%;
     column-count: 2;
     margin-left: 2%;
     margin-right: 2%;
@@ -70,13 +69,6 @@ h1{
     padding: 8px;
     display: inline-block;
 }
-/*#reviewsgroup1{
-    border: solid yellow 3pt;
-    
-}
-#reviewsgroup2{
-    border: solid greenyellow 3pt;
-}*/
 .review img{
     float: left;
     padding-right: 5px;
@@ -88,9 +80,6 @@ h1{
     float: left;
     padding-right: 5px;
 }
-/*#lastreview{
-    border: solid red 3pt;
-}*/
 .publication{
     font-style: italic;
     display: inline-block;
@@ -105,7 +94,6 @@ dl .info{
 }
 .info ul{
     list-style-type: none;
-    padding-inline-start: 0px;
 }
 #paging{
     width: 100%;
