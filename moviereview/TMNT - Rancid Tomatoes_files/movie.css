@@ -23,6 +23,7 @@ h1{
     margin-right:auto;
     border: solid gray 4px;
     border-radius: 20px;
+    overflow: hidden;
 }
 #generaloverview{
     width: 250px;
@@ -58,6 +59,7 @@ h1{
     column-width: 47%;
     column-count: 2;
     margin-left: 2%;
+    margin-right: 2%;
 }
 .review{
     background-color: #E8DC9B;
@@ -68,6 +70,13 @@ h1{
     padding: 8px;
     display: inline-block;
 }
+/*#reviewsgroup1{
+    border: solid yellow 3pt;
+    
+}
+#reviewsgroup2{
+    border: solid greenyellow 3pt;
+}*/
 .review img{
     float: left;
     padding-right: 5px;
@@ -79,8 +88,12 @@ h1{
     float: left;
     padding-right: 5px;
 }
+/*#lastreview{
+    border: solid red 3pt;
+}*/
 .publication{
     font-style: italic;
+    display: inline-block;
 }
 dl dt{
     font-weight: bold;
@@ -100,10 +113,11 @@ dl .info{
     background-color: #A2B964;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    padding-bottom: 5px;
+    padding: 5px;
     clear:both;
 }
 #checklinks{
-    float: right;
     bottom: 0px;
+    right: 0px;
+    position: fixed;
 }
