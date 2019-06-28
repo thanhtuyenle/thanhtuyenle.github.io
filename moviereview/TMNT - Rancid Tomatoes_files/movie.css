@@ -1,0 +1,108 @@
+body{
+    background-image: url(../images/background.png);
+    background-repeat: repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+#header{
+    background-image: url(../images/bannerbg.png);
+    background-repeat: repeat-x;
+    z-index: -1;
+    text-align: center;
+}
+h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24pt;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3pt 3pt #999999
+}
+#overalcontentarea{
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+    border: solid gray 4px;
+    border-radius: 20px;
+}
+#generaloverview{
+    width: 250px;
+    float: right;
+    background-color: #A2B964;
+    border-top-right-radius: 16px;
+    font-family: Arial,sans-serif;
+    font-size: 8pt;
+}
+#moviephoto img{
+    border-top-right-radius: 16px;
+}
+
+#leftsection{
+    width:550px;
+}
+#rottenbg{
+    background-image: url(../images/rbg.png);
+    z-index: -1;
+    background-repeat: repeat-x;
+    border-top-left-radius: 16px;
+}
+#rottenbg img{
+    border-radius: 16px;
+}
+#rottenbg span{
+    vertical-align: bottom;
+    font-size: 48pt;
+    color: red;
+    font-weight: bold;    
+}
+#reviews {
+    column-width: 47%;
+    column-count: 2;
+    margin-left: 2%;
+}
+.review{
+    background-color: #E8DC9B;
+    border: solid gray 2px;
+    font-weight: bold;
+    font-size: 8pt;
+    border-radius: 10px;
+    padding: 8px;
+    display: inline-block;
+}
+.review img{
+    float: left;
+    padding-right: 5px;
+}
+.reviewer{
+    margin-top: 5pt;
+}
+.reviewer img {
+    float: left;
+    padding-right: 5px;
+}
+.publication{
+    font-style: italic;
+}
+dl dt{
+    font-weight: bold;
+    font-size: 10pt;
+}
+dl .info{
+    margin-bottom: 10pt;
+    margin-left: 10pt;
+}
+.info ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+#paging{
+    width: 100%;
+    text-align: center;
+    background-color: #A2B964;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-bottom: 5px;
+}
+#checklinks{
+    float: right;
+    bottom: 0px;
+}
