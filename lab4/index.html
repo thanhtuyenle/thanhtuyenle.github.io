@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Checkout items in a shopping cart </h2>
+
+<form action="success.html" method="POST">
+    <fieldset>
+        <legend>Personal details :</legend>
+        <label> First name: <input type="text" name="firstname" maxlength="10" required pattern="^[A-Z][a-z]*$" title="Please input first name"> </label><br>
+        <label> Last name: <input type="text" name="lastname" maxlength="10" required pattern="^[A-Z][a-z]*$" title="Please input last name"></label><br>
+        <label> Date of Birth: <input type="text" name="dateofbirth" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d"></label><br>
+        <label> Emails: <input type="text" name="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></label><br>
+        <label> SSN Number: <input type="text" name ="ssn" required pattern="^\d{3}-\d{2}-\d{4}$"</label>
+    </fieldset>
+    <fieldset>
+        <legend>Billing Address :</legend>
+        <label> Street Address: <input type="text" name="billingaddress1" maxlength="35" required pattern="^[a-zA-Z0-9 /.,]{2,35}$" title="Please input street address 1"></label><br>
+        <label> Street Adress Line 2: <input type="text" name="billingaddress2" maxlength="35" pattern="^[a-zA-Z0-9 /.,]{2,35}$" title="Please input street addres 2"></label><br>
+        <label> City: <input type="text" name="billingcity" maxlength="10" required partern="^[a-zA-Z]{2,10}$"></label><br>
+        <label> State/Province: <input type="text" name="billingstate" maxlength="10" required pattern="^[a-zA-Z]{2,10}$"></label><br>
+        <label> Zipcode: <input type="text" name="billingzipcode" required pattern="^[0-9]{5,}"></label><br>
+        <label> Country:
+        <select name="billingcountry">
+                <option>Vietnam</option>
+                <option>Mexican</option>
+                <option selected>United States</option>
+                <option>Spain</option>
+        </select>
+        </label>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Shipping Address :</legend>
+        <label> Street Address:
+        <input type="text" name="shippingaddress1" maxlength="35" required pattern="^[a-zA-Z0-9 /.,]{2,35}$" title="Please input street address 1"></label><br>
+        <label> Street Adress Line 2:
+        <input type="text" name="shippingaddress2" maxlength="35" pattern="^[a-zA-Z0-9 /.,]{2,35}$" title="Please input street addres 2"></label><br>
+        <label> City: <input type="text" name="shippingcity" maxlength="10" required partern="^[a-zA-Z]{2,10}$"></label><br>
+        <label> State/Province: <input type="text" name="shippingstate" maxlength="10" required pattern="^[a-zA-Z]{2,10}$"></label><br>
+        <label> Zipcode: <input type="text" name="shippingzipcode" required pattern="^[0-9]{5,}"></label><br>
+        <label> Country:<br>
+        <select name="shippingcountry">
+                <option>Vietnam</option>
+                <option>Mexican</option>
+                <option selected>United States</option>
+                <option>Spain</option>
+        </select>
+        </label>
+        <br>
+    </fieldset> 
+    <fieldset>
+        <legend>Payment Info :</legend>
+        <label> Card Holder's Name: <input type="text" name="cardholder" required pattern="^[a-zA-Z0-9 ]{2,35}$"></label><br>
+        <label> Card Number: <input type="text" name="cardnumber" required pattern="^[0-9 ]{16,19}$"></label><br>
+        <label> Card Expired Date: <input type="datetime" name="cardexpireddate" required pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](20)\d\d"></label><br>
+        <label> Card CVV: <input type="text" maxlength="3" name="cardcvv" pattern="[0-9]{3}" title="Three digit card cvv"></label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Checkbox for agreement :</legend>
+        <input type="checkbox" name="cbagree"> I accept the Terms and Conditions
+    </fieldset>  
+<input type="submit">
+</form>
+</body>
+</html>
