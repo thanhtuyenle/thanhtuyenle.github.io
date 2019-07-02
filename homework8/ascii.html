@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>ASCIImation</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="ascii.css">
+	<meta charset="utf-8" />
+	<title>ASCII Animation Viewer</title>
+	<link href="ascii.css" type="text/css" rel="stylesheet" />
+	<script src="animations.js"></script>
+	<script src="ascii.js"></script>
 </head>
+
 <body>
-	<div id="main">
-		<h1>ASCII Animation Viewer</h1>
-		<textarea id="stage" name="stage" cols="80" rows="20"></textarea>
-		<div id="behaviors">
-			<fieldset>
-				<legend>Play Controls:</legend>
-				<input type="button" id="start" name="start" value="Start">
-				<input type="button" id="stop" name="stop" value="Stop" disabled>
+	<h1>CSE 190 M ASCII Animation Viewer</h1>
+	<div id="main_content">
+		<textarea id="display" cols="80" rows="20"></textarea>
+		<div id="fieldset_group">
+			<fieldset id="play_control_fs">
+				<legend>Play Control</legend>
+				<button id="start_btn">Start</button>
+				<button id="stop_btn" disabled>Stop</button>
 			</fieldset>
-
-			<fieldset>
-				<legend>Animations:</legend>
-				<select name="animate" id="animate">
-					<option value="blank">Blank</option>
-					<option value="exercise">Exercise</option>
+			<fieldset id="animation_fs">
+				<legend>Animation</legend>
+				<select name="animation" id="animation">
+					<option value="">Blank</option>
+					<option value="Exercise">Exercise</option>
 					<option value="Juggler">Juggler</option>
-					<option value="bike">Bike</option>
-					<option value="dive">Dive</option>
-					<option value="custom">Custom</option>
+					<option value="Bike">Bike</option>
+					<option value="Dive">Dive</option>
 				</select>
 			</fieldset>
-
-			<fieldset>
-				<legend>Size:</legend>
+			<fieldset id="size_fs">
+				<legend>Size</legend>
 				<select name="size" id="size">
-					<option value="7pt">Tiny</option>
-					<option value="10pt">Small</option>
-					<option value="12pt">Medium</option>
-					<option value="16pt">Large</option>
-					<option value="24pt">Extra Large</option>
-					<option value="32pt">XXL</option>
+					<option value="7">Tiny</option>
+					<option value="10">Small</option>
+					<option value="12">Medium</option>
+					<option value="16">Large</option>
+					<option value="24">Extra Large</option>
+					<option value="32">XXL</option>
 				</select>
 			</fieldset>
-
-			<fieldset>
-				<legend>Speed:</legend>
-				<label><input id="speed" type="checkbox" name="speed" value="1"> Turbo</label>
+			<fieldset id="speed_fs">
+				<legend>Speed</legend>
+				<label>
+					<input type="checkbox" name="speed" id="speed">
+					Turbo
+				</label>
 			</fieldset>
-		</div>
-		<div id="validators">
-			<a href="http://validator.w3.org/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="Valid HTML5" /></a> <br>
-			<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="Valid CSS" /></a>
-			<a href="https://webster.cs.washington.edu/jslint/?referer">
-				<img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
-			</a>
 		</div>
 	</div>
-	<script src="animations.js"></script>
-	<script src="ascii.js"></script>	
+
+
+	<footer>
+		<a href="http://validator.w3.org/check/referer">
+			<img src="http://mumstudents.org/cs472/2014-09/images/w3c-html.png" alt="html validator">
+		</a>
+		<br>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="http://mumstudents.org/~986560/lab3/movie/index_files/w3c-css.png"
+			 alt="Valid CSS"></a>
+		<br>
+		<a href="https://webster.cs.washington.edu/jslint/?referer">
+			<img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+		</a>
+	</footer>
 </body>
+
 </html>
