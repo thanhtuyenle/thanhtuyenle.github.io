@@ -1,0 +1,59 @@
+<html>
+
+
+
+<head>
+
+<title>Page Title here</title>
+
+<script language=javascript>
+
+
+
+function to_start(){
+
+tm=window.setInterval('disp()',1000);
+
+}
+
+
+
+function to_stop(){
+
+window.clearInterval(tm);
+
+}
+
+
+
+function disp(){
+
+var dt= new Date();
+
+var str=dt.toTimeString()
+
+document.getElementById('n1').value=str;
+
+}
+
+</script>
+
+
+
+</head>
+
+<body >
+
+
+
+<input type=text id=n1 >
+
+<input type="button" name="btn" value="Start" onclick="to_start()";>
+
+<input type="button" name="btn" value="Stop" onclick="to_stop()";>
+
+
+
+</body>
+
+</html>
