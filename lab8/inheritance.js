@@ -1,23 +1,23 @@
+"use strict";
 (function(){
-    "use strict";
     function createBicyclePrototye() {
         let speed = 0; 
         return {
             speed: function(){
                 return speed;
             },
-            applyBrake: function(x){
+            applyBrake: function(x) {
                 speed -= x;
-                if(speed < 0){
+                if (speed < 0){
                     speed = 0;
                 }
             },
-            speedup: function(y){
+            speedup: function(y) {
                 speed += y;
             }
         }
     }
-    function createMountainBikeProtoype(prototype){
+    function createMountainBikeProtoype(prototype) {
         let obj = Object.create(prototype);
         obj.gear = 1;
         obj.setGear = function(x){
@@ -25,7 +25,7 @@
         }
         return obj;
     }
-    function start(){
+    function start() {
         let bicyclePrototype = createBicyclePrototye();
         let mountainBikePrototype = createMountainBikeProtoype(bicyclePrototype);
         let bike = Object.create(bicyclePrototype);
