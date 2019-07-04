@@ -1,18 +1,18 @@
 "use strict";
-(function(){
+(function () {
     function createBicyclePrototye() {
-        let speed = 0; 
+        let speed = 0;
         return {
-            speed: function(){
+            speed: function () {
                 return speed;
             },
-            applyBrake: function(x) {
+            applyBrake: function (x) {
                 speed -= x;
-                if (speed < 0){
+                if (speed < 0) {
                     speed = 0;
                 }
             },
-            speedup: function(y) {
+            speedup: function (y) {
                 speed += y;
             }
         }
@@ -20,7 +20,7 @@
     function createMountainBikeProtoype(prototype) {
         let obj = Object.create(prototype);
         obj.gear = 1;
-        obj.setGear = function(x){
+        obj.setGear = function (x) {
             this.gear = x;
         }
         return obj;
