@@ -30,8 +30,10 @@ public class CSSupportServlet extends HttpServlet {
         String email = req.getParameter("email");
         int requestId =  (int)(Math.random() * ((1000 - 1) + 1)) + 1;
         String support_ticket_id =  String.valueOf(requestId);
+
+        String supportEmail = req.getServletContext().getInitParameter("support_email");
         out.print("<p>Thank you! " + name + " for contacting us. We should receive reply from us with in 24 hrs in your email address " + email +
-                ". Let us know in our support email cstech@mum.edu if you don’t receive reply within 24 hrs. " +
+                ". Let us know in our support email " + supportEmail + ", if you don’t receive reply within 24 hrs. " +
                 "Please be sure to attach your reference " + support_ticket_id + " in your email.");
         out.print("</body></html>");
     }

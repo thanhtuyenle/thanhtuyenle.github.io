@@ -12,4 +12,8 @@
         <servlet-name>myservlet</servlet-name>
         <url-pattern>/support</url-pattern>
     </servlet-mapping>
+    <context-param>
+        <param-name>support_email</param-name>
+        <param-value>cstech@mum.edu</param-value>
+    </context-param>
 </web-app>
