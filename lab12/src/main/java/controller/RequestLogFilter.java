@@ -16,23 +16,13 @@ public class RequestLogFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
         HttpSession session = req.getSession(false);
         HttpServletResponse resp = (HttpServletResponse) response;
-        try {
-            if(session.getAttribute("user_info") == null){
-                ((HttpServletResponse) response).sendRedirect("/login");
-            }else{
-                chain.doFilter(request,response);
-            }
-        } finally {
-            Instant end = Instant.now();
-            Duration timeElapsed = Duration.between(start, end);
-            HttpServletRequest in = (HttpServletRequest) request;
-            HttpServletResponse out = (HttpServletResponse) response;
-            String length = out.getHeader("Content-Length");
-            if (length == null || length.length() == 0)
-                length = "-";
-            System.out.println(in.getRemoteAddr() + " - - [" + start + "]" + " \"" + in.getMethod() + " "
-                    + in.getRequestURI() + " " + in.getProtocol() + "\" " + out.getStatus() + " " + length + " "
-                    + timeElapsed.toNanos() + " nano-seconds");
+
+        if(req.getSession()!= null && req.getSession().getAttribute("user_info") != null){
+            chain.doFilter(request,response);
+        }
+        else{
+            ((HttpServletRequest) request).getSession().setAttribute("err_msg", "You need to log in first.");
+            resp.sendRedirect("login.jsp");
         }
     }
 
